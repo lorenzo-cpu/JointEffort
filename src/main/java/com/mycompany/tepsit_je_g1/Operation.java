@@ -9,6 +9,7 @@ package com.mycompany.tepsit_je_g1;
  *
  * @author utente
  */
-public abstract class Funzione{
-    
+public abstract class Operation { 
+    protected Result result = new Result();
+    public abstract Result execute(double n1, double n2);
 }
