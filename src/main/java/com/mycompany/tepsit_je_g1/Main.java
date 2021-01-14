@@ -34,6 +34,7 @@ public class Main {
             {
                 System.out.println("errore");
                 error = true;
+                scn.next();
             }
                     
         }while(error);
@@ -51,6 +52,7 @@ public class Main {
             {
                 System.out.println("errore");
                 error = true;
+                scn.next();
             }
                     
         }while(error);
@@ -70,6 +72,7 @@ public class Main {
             {
                 System.out.println("errore");
                 error = true;
+                scn.next();
             }
                     
         }while(error);
