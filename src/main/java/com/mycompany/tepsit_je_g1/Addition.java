@@ -2,10 +2,7 @@ package com.mycompany.tepsit_je_g1;
 
 public class Addition extends Operation{
 
-    public Addition()
-    {
-       
-    }
+    public Addition() {}
     
     @Override
     public Result execute(double n1, double n2) {
