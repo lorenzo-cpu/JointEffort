@@ -9,6 +9,8 @@ public class Addition extends Operation{
        try
        {
            result.number = n1 + n2;
+           if(result.number == Double.POSITIVE_INFINITY)
+               throw new Exception();
        }
        catch(Exception e)
        {

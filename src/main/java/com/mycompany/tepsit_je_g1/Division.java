@@ -26,11 +26,7 @@ public class Division extends Operation{
        }
        catch(Exception e)
        {
-           
-           if(n2 == 0)
-               result.error = "impossibile diveidere per 0";
-           else 
-               result.error = "è presnete un'errore";
+               result.error = "errore(probabile grandezza non supportata)";
        }
        
        return result;
