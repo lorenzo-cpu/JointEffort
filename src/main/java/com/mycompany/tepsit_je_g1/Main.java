@@ -10,5 +10,8 @@ package com.mycompany.tepsit_je_g1;
  * @author utente
  */
 public class Main {
-    
+    public static void main(String args[])
+    {
+        
+    }
 }
