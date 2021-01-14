@@ -18,7 +18,6 @@ public class Main {
         Scanner scn = new Scanner(System.in);
         char operator = ' ';
         Operation operation;
-        Result result = new Result();
         boolean error = false;
         
         do

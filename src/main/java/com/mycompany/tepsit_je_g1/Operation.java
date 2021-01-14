@@ -21,8 +21,8 @@ public abstract class Operation {
             return new Addition();
         else if(operation == '/')
             return new Division();
-       /* else if(operation == '*')
-            return new Addition();*/
+        else if(operation == '*')
+            return new Addition();
         else
             return new Module();
     }
