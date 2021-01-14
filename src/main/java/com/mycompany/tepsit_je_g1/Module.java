@@ -11,6 +11,9 @@ package com.mycompany.tepsit_je_g1;
  */
 public class Module extends Operation{
 
+    public Module() {
+    }
+
     @Override
     public Result execute(double n1, double n2) {
         try

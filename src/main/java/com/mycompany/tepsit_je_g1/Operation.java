@@ -12,4 +12,18 @@ package com.mycompany.tepsit_je_g1;
 public abstract class Operation { 
     protected Result result = new Result();
     public abstract Result execute(double n1, double n2);
+    
+    public static Operation autoDefine(char operation)
+    {
+        if(operation == '+')
+            return new Addition();
+        /*else if(operation == '-')
+            return new Addition();*/
+        else if(operation == '/')
+            return new Division();
+       /* else if(operation == '*')
+            return new Addition();*/
+        else
+            return new Module();
+    }
 }
