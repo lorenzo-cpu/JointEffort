@@ -17,7 +17,8 @@ public class Addition extends Operation{
        {
                result.error = "errore(probabile grandezza non supportata)";
        }
-       
+
+
        return result;
     }
 }
