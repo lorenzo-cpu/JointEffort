@@ -17,8 +17,8 @@ public abstract class Operation {
     {
         if(operation == '+')
             return new Addition();
-        /*else if(operation == '-')
-            return new Addition();*/
+        else if(operation == '-')
+            return new Addition();
         else if(operation == '/')
             return new Division();
        /* else if(operation == '*')
