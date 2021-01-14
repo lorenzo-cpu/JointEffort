@@ -78,7 +78,7 @@ public class Main {
         
         operation = Operation.autoDefine(operator);
         
-        System.out.println("result ( " + Double.toString(n1) + " " + operator + " " + Double.toString(n2) + " = " + operation.execute(n1, n2) + " )");
+        System.out.println("result ( " + Double.toString(n1) + " " + operator + " " + Double.toString(n2) + " = " + operation.execute(n1, n2).toString() + " )");
         
     }
     
