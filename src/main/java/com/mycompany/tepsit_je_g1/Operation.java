@@ -1,29 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.tepsit_je_g1;
-
 /**
- *
- * @author utente
+ * Classe per la gestione delle operazioni
  */
 public abstract class Operation { 
     protected Result result = new Result();
+    /**
+     * esegue l'operazione della classe tra i due parametri restituendo un istanza Result
+     */
     public abstract Result execute(double n1, double n2);
-    
+    /**
+     * restituisce l'operazione in base al segno passato per parametro
+     */
     public static Operation autoDefine(char operation)
     {
         if(operation == '+')
             return new Addition();
         else if(operation == '-')
-            return new Addition();
+            return new Subtraction();
         else if(operation == '/')
             return new Division();
         else if(operation == '*')
-            return new Addition();
-        else
+            return new Moltiplication();
+        else if(operation == '%')
             return new Module();
+        else return new Addition();
     }
 }

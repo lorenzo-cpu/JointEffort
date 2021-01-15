@@ -1,13 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.tepsit_je_g1;
-
 /**
- *
- * @author utente
+ * Classe per la gestione del risultato
  */
 public class Result {
     public double number;
@@ -16,7 +9,9 @@ public class Result {
     public Result() {
         error = "null";
     }
-    
+    /**
+     * restituisce il valore del risultato o l'errore in caso sia presente
+     */
     @Override
     public String toString()
     {

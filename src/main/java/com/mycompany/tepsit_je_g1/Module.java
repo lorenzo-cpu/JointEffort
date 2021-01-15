@@ -1,33 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.tepsit_je_g1;
-
 /**
- *
- * @author utente
+ * Classe per eseguire il modulo
  */
 public class Module extends Operation{
 
-    public Module() {
-    }
-
+    public Module() {}
+    /** 
+     * esegue l'operazione della classe tra i due parametri restituendo un istanza Result
+     */
     @Override
     public Result execute(double n1, double n2) {
         try
         {
-           result.number = n1 % n2;
-           if(result.number == Double.POSITIVE_INFINITY)
-               throw new Exception();
+            result.number = n1 % n2;
+            if(result.number == Double.POSITIVE_INFINITY)
+                throw new Exception();
         }
         catch(Exception e)
         {
             result.error = "errore(probabile grandezza non supportata)";
         }
-       
        return result;
     }
-    
 }

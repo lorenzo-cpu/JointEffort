@@ -1,16 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.tepsit_je_g1;
-
 import java.util.Scanner;
 
-/**
- *
- * @author utente
- */
 public class Main {
     public static void main(String args[])
     {
@@ -23,7 +13,6 @@ public class Main {
         do
         {
             System.out.println("Scrivere numero 1");
-            
             try
             {
                 n1 = scn.nextDouble();
@@ -41,7 +30,6 @@ public class Main {
         do
         {
             System.out.println("Scrivere numero 2");
-            
             try
             {
                 n2 = scn.nextDouble();
@@ -55,11 +43,9 @@ public class Main {
             }
                     
         }while(error);
-        
         do
         {
             System.out.println("Scrivere operazione (+ - / * %)");
-            
             try
             {
                 operator = scn.next().charAt(0);
@@ -77,9 +63,6 @@ public class Main {
         }while(error);
         
         operation = Operation.autoDefine(operator);
-        
         System.out.println("result ( " + Double.toString(n1) + " " + operator + " " + Double.toString(n2) + " = " + operation.execute(n1, n2).toString() + " )");
-        
     }
-    
 }
